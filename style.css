@@ -1,0 +1,157 @@
+body {
+    background: #1e87b0;
+    background: linear-gradient(90deg, rgba(30, 135, 176, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+ul {
+    list-style: none;
+}
+button {
+    border: 0;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1 {
+    font-size: 44px;
+    font-weight: 900;
+    color: aquamarine;
+    margin: 0;
+}
+input {
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #1e87b0;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    flex: 1;
+}
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: 4px;
+    left: 10px;
+    font-size: 12px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.calc_button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.selectable {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 30px;
+    border: 0;
+    transition: all 0.2s;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+.selectable.active {
+    background-color: green;
+}
+#submit_button {
+    padding: 20px;
+    border: 1px solid gray;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    border: 0;
+}
+#submit_button:hover {
+    background-color: #1e87b0;
+}
+.result_block {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+.number_result {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+@media screen and (max-width:900px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+.second {
+    margin-top: 40px;
+}
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#create {
+    padding: 20px;
+    border: 1px solid gray;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    border: 0;
+}
+#create:hover {
+    background-color: #1e87b0;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+}
+.red {
+    background-color: red;
+    padding: 15px;
+    color: #fff;
+}
+.name_card {
+    font-size: 25px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор</h1>
+        <div class="input-wrapper">
+        <input type="number" id="input1" class="first-number" placeholder=" ">
+        <label for="input1">Введите 1 число</label>
+        </div>
+        <div class="input-wrapper">
+        <input type="number" id="input2" class="second-number" placeholder=" ">
+        <label for="input2">Введите 2 число</label>
+        </div>
+        <div class="calc_button">
+            <button type="button" class="plus selectable" id="plus">+</button>
+            <button type="button" class="minus selectable" id="minus">-</button>
+            <button type="button" class="mult selectable" id="mult">*</button>
+            <button type="button" class="division selectable" id="division">/</button>
+        </div>
+        <button type="button" id="submit_button">Вычислить</button>
+        <div class="result_block">
+            <h2>Результат:</h2>
+            <p class="number_result" id="result"> </p>
+        </div>
+    </div>
+    <div class="container second">
+        <h1>Заметки</h1>
+        <div class="input-wrapper">
+        <input type="text" class="name" id="title" placeholder=" ">
+        <label for="title">Введите название</label>
+        </div>
+        <button type="button" id="create">Добавить</button>
+        <ul id="list">
+        </ul>
+    </div>
+    <script src="joke.js"></script>
+    <script src="new.js"></script>
+</body>
+</html>
